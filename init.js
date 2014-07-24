@@ -29,6 +29,7 @@ if (cluster.isWorker){
 
 var config = JSON.parse(fs.readFileSync('config.json'));
 
+
 var logger = require('./lib/logUtil.js')({
     logLevel: config.logLevel,
     logColors: config.logColors
